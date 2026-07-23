@@ -4,22 +4,29 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PhasmoGuide - Ultimate Phasmophobia Companion</title>
 
-<meta name="description" content="PhasmoGuide is een complete Phasmophobia hulpwebsite met Ghost Finder, maps, apparatuur, strategieën en gidsen in meerdere talen.">
+<meta name="description" content="PhasmoGuide helpt Phasmophobia spelers met Ghost Finder, geesten informatie, interactieve maps, equipment gidsen en strategieën.">
 
-<meta name="keywords" content="Phasmophobia, Ghost Finder, Phasmophobia guide, ghosts, maps, evidence">
+<meta name="keywords" content="Phasmophobia guide, Ghost Finder, Phasmophobia ghosts, Phasmophobia maps, evidence">
 
 <meta name="author" content="PhasmoGuide">
 
-<meta property="og:title" content="PhasmoGuide - Phasmophobia Companion">
-<meta property="og:description" content="Vind geesten, ontdek map locaties en verbeter je Phasmophobia strategie.">
+
+<!-- SEO -->
+
+<meta property="og:title" content="PhasmoGuide - Ultimate Phasmophobia Companion">
+
+<meta property="og:description" content="Vind geesten, ontdek locaties en verbeter jouw Phasmophobia onderzoeken.">
+
 <meta property="og:type" content="website">
 
 
 <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -27,36 +34,54 @@
 <body>
 
 
-<header>
+<header class="header">
+
 
 <div class="logo">
-👻 PhasmoGuide
+
+👻 <span>PhasmoGuide</span>
+
 </div>
 
 
-<nav>
+
+<nav class="navigation">
 
 <a href="index.html">Home</a>
+
 <a href="ghost-finder.html">Ghost Finder</a>
+
 <a href="ghosts.html">Geesten</a>
+
 <a href="maps.html">Maps</a>
+
 <a href="equipment.html">Equipment</a>
+
 <a href="guides.html">Gidsen</a>
 
 </nav>
 
 
-<select id="language">
+
+<select id="language-select">
 
 <option value="nl">🇳🇱 Nederlands</option>
+
 <option value="en">🇬🇧 English</option>
+
 <option value="de">🇩🇪 Deutsch</option>
+
 <option value="fr">🇫🇷 Français</option>
+
+<option value="es">🇪🇸 Español</option>
 
 </select>
 
 
+
 </header>
+
+
 
 
 
@@ -68,29 +93,37 @@
 
 <div class="hero-content">
 
+
 <h1>
-De ultieme Phasmophobia hulpwebsite
+De ultieme Phasmophobia Companion
 </h1>
 
 
 <p>
-Vind geesten, ontdek bewijs, bekijk map locaties en verbeter jouw jachtstrategie.
+Vind geesten, analyseer bewijs en ontdek alle belangrijke locaties op elke map.
 </p>
 
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a class="button" href="ghost-finder.html">
-👻 Start Ghost Finder
+
+<a href="ghost-finder.html" class="button">
+
+👻 Ghost Finder
+
 </a>
 
 
-<a class="button secondary" href="maps.html">
-🗺 Bekijk Maps
+
+<a href="maps.html" class="button secondary">
+
+🗺 Interactieve Maps
+
 </a>
 
 
 </div>
+
 
 </div>
 
@@ -100,7 +133,10 @@ Vind geesten, ontdek bewijs, bekijk map locaties en verbeter jouw jachtstrategie
 
 
 
-<section class="features">
+
+
+
+<section class="intro">
 
 
 <h2>
@@ -108,76 +144,121 @@ Alles wat je nodig hebt tijdens een onderzoek
 </h2>
 
 
-<div class="cards">
+<p>
+
+PhasmoGuide is een uitgebreide hulpwebsite voor Phasmophobia spelers.
+Gebruik handige tools om sneller geesten te herkennen en betere beslissingen te maken.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="features">
 
 
 <div class="card">
 
+
 <h3>👻 Ghost Finder</h3>
 
+
 <p>
-Selecteer gevonden bewijs en ontdek welke geesten nog mogelijk zijn.
+
+Selecteer bewijs en ontdek welke geesten nog mogelijk zijn.
+
 </p>
 
+
 <a href="ghost-finder.html">
-Open Finder →
+Start onderzoek →
 </a>
+
 
 </div>
 
 
 
+
+
 <div class="card">
 
-<h3>🗺 Interactieve Maps</h3>
+
+<h3>🗺 Map Locator</h3>
+
 
 <p>
-Bekijk waar belangrijke voorwerpen en locaties zich bevinden.
+
+Bekijk waar botten, cursed possessions en belangrijke objecten kunnen liggen.
+
 </p>
+
 
 <a href="maps.html">
 Bekijk Maps →
 </a>
 
+
 </div>
+
+
 
 
 
 <div class="card">
 
+
 <h3>🧰 Equipment Guide</h3>
 
+
 <p>
+
 Leer alles over Tier 1, Tier 2 en Tier 3 apparatuur.
+
 </p>
+
 
 <a href="equipment.html">
 Bekijk Equipment →
 </a>
 
+
 </div>
+
+
 
 
 
 <div class="card">
 
+
 <h3>📚 Strategieën</h3>
 
+
 <p>
-Tips voor beginners en ervaren spelers.
+
+Tips voor beginners en ervaren ghost hunters.
+
 </p>
+
 
 <a href="guides.html">
 Lees Gidsen →
 </a>
-
-</div>
 
 
 </div>
 
 
 </section>
+
+
 
 
 
@@ -191,31 +272,42 @@ Populaire geesten
 </h2>
 
 
-<div class="ghost-list">
+
+<div class="ghost-grid">
 
 
-<div class="ghost">
+<div class="ghost-card">
+
 👻 Spirit
+
 </div>
 
 
-<div class="ghost">
+<div class="ghost-card">
+
 👻 Demon
+
 </div>
 
 
-<div class="ghost">
+<div class="ghost-card">
+
 👻 Deogen
+
 </div>
 
 
-<div class="ghost">
-👻 Revenant
-</div>
+<div class="ghost-card">
 
-
-<div class="ghost">
 👻 Oni
+
+</div>
+
+
+<div class="ghost-card">
+
+👻 Revenant
+
 </div>
 
 
@@ -228,38 +320,53 @@ Populaire geesten
 
 
 
-<section class="ads">
 
-<!-- AdSense advertentie ruimte -->
+
+<section class="advertisement">
+
 
 <div>
 
-Advertentie
+Advertentie ruimte
 
 </div>
 
+
 </section>
 
 
 
 
 
-<section class="about">
+
+
+<section class="why">
 
 
 <h2>
-Over PhasmoGuide
+Waarom PhasmoGuide?
 </h2>
 
 
-<p>
-PhasmoGuide is een onafhankelijke hulpwebsite voor Phasmophobia spelers.
-Gebruik onze tools om sneller geesten te herkennen, maps te begrijpen
-en betere onderzoeken uit te voeren.
-</p>
+<ul>
+
+<li>✅ Meerdere talen</li>
+
+<li>✅ Mobielvriendelijk</li>
+
+<li>✅ Interactieve tools</li>
+
+<li>✅ Regelmatige updates</li>
+
+<li>✅ Gratis te gebruiken</li>
+
+</ul>
 
 
 </section>
+
+
+
 
 
 
@@ -268,10 +375,14 @@ en betere onderzoeken uit te voeren.
 
 
 
+
+
+
 <footer>
 
 
-<div>
+<div class="footer-links">
+
 
 <a href="about.html">
 Over ons
@@ -284,28 +395,37 @@ Contact
 
 
 <a href="privacy.html">
-Privacy
+Privacybeleid
 </a>
 
 
 <a href="cookies.html">
-Cookies
+Cookiebeleid
 </a>
+
 
 </div>
 
 
+
 <p>
+
 © 2026 PhasmoGuide - Unofficial Phasmophobia Companion
+
 </p>
+
 
 
 </footer>
 
 
 
+
+
 <script src="js/app.js"></script>
+
 <script src="js/language.js"></script>
+
 
 
 </body>
