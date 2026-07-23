@@ -7,7 +7,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PhasmoGuide - Ultimate Phasmophobia Companion</title>
+<title data-i18n="site.title">
+PhasmoGuide - Ultimate Phasmophobia Companion
+</title>
 
 <meta name="description" content="PhasmoGuide helpt Phasmophobia spelers met Ghost Finder, geesten informatie, interactieve maps, equipment gidsen en strategieën.">
 
@@ -15,8 +17,10 @@
 
 <meta name="author" content="PhasmoGuide">
 
+<meta name="theme-color" content="#111827">
 
-<!-- SEO -->
+
+<!-- Open Graph -->
 
 <meta property="og:title" content="PhasmoGuide - Ultimate Phasmophobia Companion">
 
@@ -25,57 +29,141 @@
 <meta property="og:type" content="website">
 
 
+<!-- Favicon -->
+
+<link rel="icon" href="images/favicon.png">
+
+
+<!-- CSS -->
+
 <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 
+
 <body>
+
+
+<!-- Mobile menu knop -->
+
+<button 
+class="menu-toggle" 
+id="menu-toggle"
+aria-label="Open menu">
+
+☰
+
+</button>
+
 
 
 <header class="header">
 
 
-<div class="logo">
+<a href="index.html" class="logo">
 
 👻 <span>PhasmoGuide</span>
 
-</div>
+</a>
 
 
 
-<nav class="navigation">
 
-<a href="index.html">Home</a>
+<nav class="navigation" id="navigation">
 
-<a href="ghost-finder.html">Ghost Finder</a>
 
-<a href="ghosts.html">Geesten</a>
+<a href="index.html" class="active" data-i18n="nav.home">
 
-<a href="maps.html">Maps</a>
+Home
 
-<a href="equipment.html">Equipment</a>
+</a>
 
-<a href="guides.html">Gidsen</a>
+
+<a href="ghost-finder.html" data-i18n="nav.finder">
+
+Ghost Finder
+
+</a>
+
+
+<a href="ghosts.html" data-i18n="nav.ghosts">
+
+Geesten
+
+</a>
+
+
+<a href="maps.html" data-i18n="nav.maps">
+
+Maps
+
+</a>
+
+
+<a href="equipment.html" data-i18n="nav.equipment">
+
+Equipment
+
+</a>
+
+
+<a href="guides.html" data-i18n="nav.guides">
+
+Gidsen
+
+</a>
+
 
 </nav>
 
 
 
+
+
+<div class="language-container">
+
+
+<label for="language-select" class="sr-only">
+
+Language
+
+</label>
+
+
 <select id="language-select">
 
-<option value="nl">🇳🇱 Nederlands</option>
 
-<option value="en">🇬🇧 English</option>
+<option value="nl">
+🇳🇱 Nederlands
+</option>
 
-<option value="de">🇩🇪 Deutsch</option>
 
-<option value="fr">🇫🇷 Français</option>
+<option value="en">
+🇬🇧 English
+</option>
 
-<option value="es">🇪🇸 Español</option>
+
+<option value="de">
+🇩🇪 Deutsch
+</option>
+
+
+<option value="fr">
+🇫🇷 Français
+</option>
+
+
+<option value="es">
+🇪🇸 Español
+</option>
+
 
 </select>
+
+
+</div>
 
 
 
@@ -94,14 +182,21 @@
 <div class="hero-content">
 
 
-<h1>
+<h1 data-i18n="hero.title">
+
 De ultieme Phasmophobia Companion
+
 </h1>
 
 
-<p>
+
+<p data-i18n="hero.description">
+
 Vind geesten, analyseer bewijs en ontdek alle belangrijke locaties op elke map.
+
 </p>
+
+
 
 
 <div class="hero-buttons">
@@ -109,17 +204,34 @@ Vind geesten, analyseer bewijs en ontdek alle belangrijke locaties op elke map.
 
 <a href="ghost-finder.html" class="button">
 
-👻 Ghost Finder
+
+👻 
+<span data-i18n="hero.button.finder">
+
+Ghost Finder
+
+</span>
+
 
 </a>
+
 
 
 
 <a href="maps.html" class="button secondary">
 
-🗺 Interactieve Maps
+
+🗺
+
+<span data-i18n="hero.button.maps">
+
+Interactieve Maps
+
+</span>
+
 
 </a>
+
 
 
 </div>
@@ -130,21 +242,18 @@ Vind geesten, analyseer bewijs en ontdek alle belangrijke locaties op elke map.
 
 </section>
 
-
-
-
-
-
-
 <section class="intro">
 
 
-<h2>
+<h2 data-i18n="intro.title">
+
 Alles wat je nodig hebt tijdens een onderzoek
+
 </h2>
 
 
-<p>
+
+<p data-i18n="intro.description">
 
 PhasmoGuide is een uitgebreide hulpwebsite voor Phasmophobia spelers.
 Gebruik handige tools om sneller geesten te herkennen en betere beslissingen te maken.
@@ -163,21 +272,35 @@ Gebruik handige tools om sneller geesten te herkennen en betere beslissingen te 
 <section class="features">
 
 
+
 <div class="card">
 
 
-<h3>👻 Ghost Finder</h3>
+<div class="card-icon">
+👻
+</div>
 
 
-<p>
+<h3 data-i18n="feature.ghostfinder.title">
+
+Ghost Finder
+
+</h3>
+
+
+
+<p data-i18n="feature.ghostfinder.description">
 
 Selecteer bewijs en ontdek welke geesten nog mogelijk zijn.
 
 </p>
 
 
-<a href="ghost-finder.html">
+
+<a href="ghost-finder.html" data-i18n="feature.ghostfinder.button">
+
 Start onderzoek →
+
 </a>
 
 
@@ -187,21 +310,36 @@ Start onderzoek →
 
 
 
+
+
 <div class="card">
 
 
-<h3>🗺 Map Locator</h3>
+<div class="card-icon">
+🗺️
+</div>
 
 
-<p>
+<h3 data-i18n="feature.maps.title">
+
+Map Locator
+
+</h3>
+
+
+
+<p data-i18n="feature.maps.description">
 
 Bekijk waar botten, cursed possessions en belangrijke objecten kunnen liggen.
 
 </p>
 
 
-<a href="maps.html">
+
+<a href="maps.html" data-i18n="feature.maps.button">
+
 Bekijk Maps →
+
 </a>
 
 
@@ -211,25 +349,42 @@ Bekijk Maps →
 
 
 
+
+
 <div class="card">
 
 
-<h3>🧰 Equipment Guide</h3>
+<div class="card-icon">
+🧰
+</div>
 
 
-<p>
+<h3 data-i18n="feature.equipment.title">
+
+Equipment Guide
+
+</h3>
+
+
+
+<p data-i18n="feature.equipment.description">
 
 Leer alles over Tier 1, Tier 2 en Tier 3 apparatuur.
 
 </p>
 
 
-<a href="equipment.html">
+
+<a href="equipment.html" data-i18n="feature.equipment.button">
+
 Bekijk Equipment →
+
 </a>
 
 
 </div>
+
+
 
 
 
@@ -238,25 +393,41 @@ Bekijk Equipment →
 <div class="card">
 
 
-<h3>📚 Strategieën</h3>
+<div class="card-icon">
+📚
+</div>
 
 
-<p>
+<h3 data-i18n="feature.guides.title">
+
+Strategieën
+
+</h3>
+
+
+
+<p data-i18n="feature.guides.description">
 
 Tips voor beginners en ervaren ghost hunters.
 
 </p>
 
 
-<a href="guides.html">
+
+<a href="guides.html" data-i18n="feature.guides.button">
+
 Lees Gidsen →
+
 </a>
 
 
 </div>
 
 
+
 </section>
+
+
 
 
 
@@ -267,54 +438,186 @@ Lees Gidsen →
 <section class="popular">
 
 
-<h2>
+<h2 data-i18n="popular.title">
+
 Populaire geesten
+
 </h2>
+
+
 
 
 
 <div class="ghost-grid">
 
 
+
+
+
 <div class="ghost-card">
+
+
+<h3>
 
 👻 Spirit
 
+</h3>
+
+
+<p data-i18n="ghost.spirit">
+
+Een normale geest zonder extreme eigenschappen.
+
+</p>
+
+
+<a href="ghosts.html#spirit">
+
+Meer informatie →
+
+</a>
+
+
 </div>
+
+
+
+
+
 
 
 <div class="ghost-card">
 
-👻 Demon
+
+<h3>
+
+👿 Demon
+
+</h3>
+
+
+<p data-i18n="ghost.demon">
+
+Een agressieve geest die vroeg kan beginnen met jagen.
+
+</p>
+
+
+<a href="ghosts.html#demon">
+
+Meer informatie →
+
+</a>
+
 
 </div>
 
 
+
+
+
+
+
 <div class="ghost-card">
+
+
+<h3>
 
 👻 Deogen
 
+</h3>
+
+
+<p data-i18n="ghost.deogen">
+
+Kan spelers overal vinden maar beweegt langzaam dichtbij.
+
+</p>
+
+
+<a href="ghosts.html#deogen">
+
+Meer informatie →
+
+</a>
+
+
 </div>
 
 
+
+
+
+
+
 <div class="ghost-card">
+
+
+<h3>
 
 👻 Oni
 
+</h3>
+
+
+<p data-i18n="ghost.oni">
+
+Een sterke en actieve geest die vaak zichtbaar is.
+
+</p>
+
+
+<a href="ghosts.html#oni">
+
+Meer informatie →
+
+</a>
+
+
 </div>
+
+
+
+
+
 
 
 <div class="ghost-card">
 
+
+<h3>
+
 👻 Revenant
 
-</div>
+</h3>
+
+
+<p data-i18n="ghost.revenant">
+
+Wordt extreem snel wanneer hij een speler detecteert.
+
+</p>
+
+
+<a href="ghosts.html#revenant">
+
+Meer informatie →
+
+</a>
 
 
 </div>
+
+
+
+
+
+</div>
+
 
 
 </section>
+
 
 
 
@@ -325,46 +628,74 @@ Populaire geesten
 <section class="advertisement">
 
 
-<div>
+<div class="ad-placeholder">
+
+
+<span data-i18n="advertisement">
 
 Advertentie ruimte
+
+</span>
+
 
 </div>
 
 
 </section>
 
-
-
-
-
-
-
 <section class="why">
 
 
-<h2>
+<h2 data-i18n="why.title">
+
 Waarom PhasmoGuide?
+
 </h2>
+
 
 
 <ul>
 
-<li>✅ Meerdere talen</li>
 
-<li>✅ Mobielvriendelijk</li>
+<li data-i18n="why.languages">
 
-<li>✅ Interactieve tools</li>
+✅ Meerdere talen
 
-<li>✅ Regelmatige updates</li>
+</li>
 
-<li>✅ Gratis te gebruiken</li>
+
+<li data-i18n="why.mobile">
+
+✅ Mobielvriendelijk
+
+</li>
+
+
+<li data-i18n="why.tools">
+
+✅ Interactieve tools
+
+</li>
+
+
+<li data-i18n="why.updates">
+
+✅ Regelmatige updates
+
+</li>
+
+
+<li data-i18n="why.free">
+
+✅ Gratis te gebruiken
+
+</li>
+
 
 </ul>
 
 
 </section>
-
 
 
 
@@ -378,33 +709,66 @@ Waarom PhasmoGuide?
 
 
 
+<!-- Meldingen -->
+
+<div id="toast-container"></div>
+
+
+<!-- Popups -->
+
+<div id="modal-container"></div>
+
+
+
+
+
+
+
+
 <footer>
+
 
 
 <div class="footer-links">
 
 
-<a href="about.html">
+
+<a href="about.html" data-i18n="footer.about">
+
 Over ons
+
 </a>
 
 
-<a href="contact.html">
+
+<a href="contact.html" data-i18n="footer.contact">
+
 Contact
+
 </a>
 
 
-<a href="privacy.html">
+
+<a href="privacy.html" data-i18n="footer.privacy">
+
 Privacybeleid
+
 </a>
 
 
-<a href="cookies.html">
+
+<a href="cookies.html" data-i18n="footer.cookies">
+
 Cookiebeleid
+
 </a>
+
 
 
 </div>
+
+
+
 
 
 
@@ -416,18 +780,26 @@ Cookiebeleid
 
 
 
+
 </footer>
 
 
 
 
 
-<script src="js/app.js"></script>
 
-<script src="js/language.js"></script>
+
+
+<!-- JavaScript -->
+
+
+<script src="js/app.js" defer></script>
+
+<script src="js/language.js" defer></script>
 
 
 
 </body>
+
 
 </html>
