@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log("PhasmoGuide geladen");
 
 
+
     /*
     ===============================
     Smooth scrolling
@@ -26,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
             const target =
-            document.querySelector(this.getAttribute("href"));
+            document.querySelector(
+                this.getAttribute("href")
+            );
 
 
             if(target){
@@ -50,56 +53,61 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+
+
     /*
     ===============================
-    Taalkeuze opslaan
+    Mobiel menu
     ===============================
     */
 
 
-    const languageSelect =
-    document.getElementById("language-select");
+    const menuToggle =
+    document.getElementById(
+        "menu-toggle"
+    );
+
+
+    const navigation =
+    document.getElementById(
+        "navigation"
+    );
 
 
 
-    if(languageSelect){
+    if(menuToggle && navigation){
 
 
-        const savedLanguage =
-        localStorage.getItem("phasmoLanguage");
-
-
-
-        if(savedLanguage){
-
-            languageSelect.value =
-            savedLanguage;
-
-        }
-
-
-
-        languageSelect.addEventListener(
-        "change",
+        menuToggle.addEventListener(
+        "click",
         function(){
 
 
-            localStorage.setItem(
-                "phasmoLanguage",
-                this.value
+            navigation.classList.toggle(
+                "open"
             );
 
 
-            console.log(
-                "Taal gewijzigd naar:",
-                this.value
-            );
+        });
 
 
-            /*
-            Later koppelen we hier
-            de echte vertalingen aan.
-            */
+
+        navigation.querySelectorAll("a")
+        .forEach(link => {
+
+
+            link.addEventListener(
+            "click",
+            function(){
+
+
+                navigation.classList.remove(
+                    "open"
+                );
+
+
+            });
 
 
         });
@@ -110,9 +118,56 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+
+
     /*
     ===============================
-    Card animatie
+    Actieve pagina
+    ===============================
+    */
+
+
+    const currentPage =
+    window.location.pathname
+    .split("/")
+    .pop();
+
+
+
+    document.querySelectorAll(
+        ".navigation a"
+    )
+    .forEach(link => {
+
+
+
+        const linkPage =
+        link.getAttribute("href");
+
+
+
+        if(linkPage === currentPage){
+
+            link.classList.add(
+                "active"
+            );
+
+        }
+
+
+
+    });
+
+
+
+
+
+
+
+    /*
+    ===============================
+    Card hover voorbereiding
     ===============================
     */
 
@@ -127,13 +182,29 @@ document.addEventListener("DOMContentLoaded", function(){
     cards.forEach(card => {
 
 
+
         card.addEventListener(
         "mouseenter",
         function(){
 
 
-            this.style.transition =
-            "0.3s";
+            this.classList.add(
+                "hover"
+            );
+
+
+        });
+
+
+
+        card.addEventListener(
+        "mouseleave",
+        function(){
+
+
+            this.classList.remove(
+                "hover"
+            );
 
 
         });
@@ -141,6 +212,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     });
+
+
+
 
 
 
