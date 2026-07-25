@@ -7,11 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PhasmoGuide - 👻 Geesten Database</title>
 
-<meta name="description" content="Complete Phasmophobia ghost database met alle geesten, evidence, sterke punten, zwakke punten en unieke eigenschappen.">
+<title>
+PhasmoGuide - Geesten Database
+</title>
+
+
+<meta name="description" content="Bekijk alle Phasmophobia geesten met evidence, sterke punten, zwakke punten en speciale eigenschappen.">
+
 
 <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -19,7 +25,9 @@
 <body>
 
 
+
 <header class="header">
+
 
 
 <a href="index.html" class="logo">
@@ -30,59 +38,78 @@
 
 
 
+
+
 <nav class="navigation">
+
 
 <a href="index.html">
 Home
 </a>
 
+
 <a href="ghost-finder.html">
 Ghost Finder
 </a>
+
 
 <a href="ghosts.html" class="active">
 Geesten
 </a>
 
+
 <a href="maps.html">
 Maps
 </a>
+
 
 <a href="equipment.html">
 Equipment
 </a>
 
+
 <a href="guides.html">
 Gidsen
 </a>
+
+
 
 </nav>
 
 
 
+
+
 <select id="language-select">
+
 
 <option value="nl">
 🇳🇱 Nederlands
 </option>
 
+
 <option value="en">
 🇬🇧 English
 </option>
+
 
 <option value="de">
 🇩🇪 Deutsch
 </option>
 
+
 <option value="fr">
 🇫🇷 Français
 </option>
+
 
 <option value="es">
 🇪🇸 Español
 </option>
 
+
 </select>
+
 
 
 </header>
@@ -91,7 +118,10 @@ Gidsen
 
 
 
+
+
 <main>
+
 
 
 <section class="hero">
@@ -101,77 +131,18 @@ Gidsen
 
 
 <h1>
-👻 Ghost Database
+👻 Geesten Database
 </h1>
 
 
 <p>
-Bekijk alle Phasmophobia geesten met hun evidence, sterke punten, zwakke punten en unieke eigenschappen.
+
+Alle Phasmophobia geesten met hun bewijs, sterke punten, zwakke punten en unieke eigenschappen.
+
 </p>
 
 
 </div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="search-area">
-
-
-<h2>
-Zoek een geest
-</h2>
-
-
-<input 
-type="text"
-id="ghostSearch"
-placeholder="Zoek bijvoorbeeld Demon, Spirit...">
-
-
-
-<select id="evidenceFilter">
-
-<option value="">
-Alle evidence
-</option>
-
-<option value="EMF Level 5">
-EMF Level 5
-</option>
-
-<option value="Spirit Box">
-Spirit Box
-</option>
-
-<option value="Ghost Writing">
-Ghost Writing
-</option>
-
-<option value="Ghost Orbs">
-Ghost Orbs
-</option>
-
-<option value="Ultraviolet">
-Ultraviolet
-</option>
-
-<option value="DOTS Projector">
-DOTS Projector
-</option>
-
-<option value="Freezing Temperatures">
-Freezing Temperatures
-</option>
-
-
-</select>
 
 
 </section>
@@ -190,21 +161,22 @@ Alle Geesten
 </h2>
 
 
+
 <div id="ghost-container" class="features">
 
 
-<!-- Ghost kaarten worden automatisch geladen -->
-
-
 <p>
-Geesten laden...
+Geesten worden geladen...
 </p>
+
 
 
 </div>
 
 
+
 </section>
+
 
 
 
@@ -215,50 +187,44 @@ Geesten laden...
 
 
 <h2>
-Tips voor ghost herkenning
+Tips voor herkennen
 </h2>
+
 
 
 <ul>
 
+
 <li>
-🔎 Verzamel altijd zoveel mogelijk bewijs.
+🔎 Verzamel altijd alle mogelijke evidence.
 </li>
+
 
 <li>
 📷 Gebruik foto's voor extra beloningen.
 </li>
 
-<li>
-🧠 Houd sanity goed in de gaten.
-</li>
 
 <li>
-🕯 Gebruik Smudge Sticks slim.
+🧠 Controleer regelmatig je sanity.
 </li>
 
+
 <li>
-👂 Let op uniek gedrag.
+🕯 Gebruik Smudge Sticks verstandig.
 </li>
+
+
+<li>
+👂 Let op uniek gedrag van elke geest.
+</li>
+
 
 
 </ul>
 
 
 </section>
-
-<!-- Advertentie ruimte voor AdSense -->
-
-<section class="advertisement">
-
-<div>
-
-Advertentie ruimte
-
-</div>
-
-</section>
-
 
 
 </main>
@@ -297,6 +263,7 @@ Cookies
 
 
 
+
 <p>
 
 © 2026 PhasmoGuide - Unofficial Phasmophobia Companion
@@ -304,7 +271,9 @@ Cookies
 </p>
 
 
+
 </footer>
+
 
 
 
@@ -315,6 +284,7 @@ Cookies
 
 
 let ghosts = [];
+
 
 
 // Ghost database laden
@@ -329,7 +299,8 @@ fetch("data/ghosts.json")
 ghosts = data;
 
 
-displayGhosts(ghosts);
+showGhosts(ghosts);
+
 
 
 })
@@ -339,7 +310,7 @@ displayGhosts(ghosts);
 
 document.getElementById("ghost-container").innerHTML =
 
-"<p>Kon geesten database niet laden.</p>";
+"<p>De geesten database kon niet worden geladen.</p>";
 
 
 console.error(error);
@@ -351,10 +322,9 @@ console.error(error);
 
 
 
-// Ghost kaarten maken
 
 
-function displayGhosts(list){
+function showGhosts(list){
 
 
 const container = document.getElementById(
@@ -362,7 +332,10 @@ const container = document.getElementById(
 );
 
 
+
 container.innerHTML = "";
+
+
 
 
 
@@ -373,11 +346,15 @@ list.forEach(ghost => {
 const card = document.createElement("div");
 
 
+
 card.className = "card ghost-card";
 
 
 
+
+
 card.innerHTML = `
+
 
 
 <h3>
@@ -385,6 +362,7 @@ card.innerHTML = `
 ${ghost.icon} ${ghost.name}
 
 </h3>
+
 
 
 <p>
@@ -397,9 +375,11 @@ ${ghost.evidence.join("<br>")}
 
 
 
+
+
 <p>
 
-<strong>Sterk:</strong><br>
+<strong>Sterk punt:</strong><br>
 
 ${ghost.strength}
 
@@ -407,13 +387,17 @@ ${ghost.strength}
 
 
 
+
+
 <p>
 
-<strong>Zwak:</strong><br>
+<strong>Zwak punt:</strong><br>
 
 ${ghost.weakness}
 
 </p>
+
+
 
 
 
@@ -427,20 +411,36 @@ ${ghost.ability}
 
 
 
+
+
 <p>
 
-<strong>Hunt:</strong>
+<strong>Hunt sanity:</strong>
+
 ${ghost.hunt_sanity}
 
 <br>
 
+
+<strong>Snelheid:</strong>
+
+${ghost.speed}
+
+
+<br>
+
+
 <strong>Moeilijkheid:</strong>
+
 ${"⭐".repeat(ghost.difficulty)}
 
 </p>
 
 
+
 `;
+
+
 
 
 
@@ -451,98 +451,8 @@ container.appendChild(card);
 });
 
 
-}
-
-
-
-
-
-
-
-// Zoekfunctie
-
-
-document
-.getElementById("ghostSearch")
-.addEventListener(
-"input",
-function(){
-
-
-const search = this.value.toLowerCase();
-
-
-
-const filtered = ghosts.filter(
-ghost =>
-
-
-ghost.name
-.toLowerCase()
-.includes(search)
-
-
-
-);
-
-
-
-displayGhosts(filtered);
-
-
-
-});
-
-
-
-
-
-
-
-// Evidence filter
-
-
-document
-.getElementById("evidenceFilter")
-.addEventListener(
-"change",
-function(){
-
-
-
-const selected = this.value;
-
-
-
-if(selected === ""){
-
-
-displayGhosts(ghosts);
-
-
-return;
-
 
 }
-
-
-
-const filtered = ghosts.filter(
-ghost =>
-
-
-ghost.evidence.includes(selected)
-
-
-);
-
-
-
-displayGhosts(filtered);
-
-
-
-});
 
 
 
