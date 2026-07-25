@@ -1,13 +1,7 @@
 /* ===================================
    PhasmoGuide Main Styles
-   Complete Version
-   Ghost Database + Ghost Finder
+   Updated + Ghost Finder Support
 =================================== */
-
-
-/* =========================
-   Reset
-========================= */
 
 
 * {
@@ -36,7 +30,7 @@ body {
 
     background:
     linear-gradient(
-        rgba(5,5,10,0.96),
+        rgba(5,5,10,0.95),
         rgba(10,10,20,0.98)
     );
 
@@ -47,6 +41,28 @@ body {
     line-height:1.6;
 
 }
+
+
+
+
+
+/* =========================
+   Accessibility
+========================= */
+
+
+.sr-only {
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    overflow:hidden;
+
+}
+
 
 
 
@@ -78,8 +94,6 @@ body {
     z-index:1000;
 
 }
-
-
 
 
 
@@ -117,8 +131,6 @@ body {
 
 
 
-
-
 .navigation a {
 
     color:white;
@@ -128,8 +140,6 @@ body {
     transition:.3s;
 
 }
-
-
 
 
 
@@ -147,7 +157,6 @@ body {
 
 #language-select {
 
-
     background:#151522;
 
     color:white;
@@ -157,7 +166,6 @@ body {
     padding:8px 12px;
 
     border-radius:8px;
-
 
 }
 
@@ -174,7 +182,6 @@ body {
 
 .hero {
 
-
     min-height:50vh;
 
     display:flex;
@@ -190,7 +197,6 @@ body {
 
     background:
 
-
     radial-gradient(
 
         circle,
@@ -201,28 +207,21 @@ body {
 
     );
 
-
 }
-
 
 
 
 .hero h1 {
 
-
     font-size:55px;
 
     margin-bottom:20px;
-
 
 }
 
 
 
-
-
 .hero p {
-
 
     font-size:20px;
 
@@ -239,46 +238,11 @@ body {
 
 
 /* =========================
-   Main Sections
-========================= */
-
-
-main section {
-
-
-    padding:60px 5%;
-
-
-}
-
-
-
-
-h2 {
-
-
-    text-align:center;
-
-    font-size:35px;
-
-    margin-bottom:35px;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
    Buttons
 ========================= */
 
 
 .button {
-
 
     display:inline-block;
 
@@ -300,35 +264,250 @@ h2 {
 
     transition:.3s;
 
-
 }
-
 
 
 
 .button:hover {
 
-
     transform:translateY(-3px);
 
     box-shadow:0 0 20px #3aa7ff;
 
-
 }
-
 
 
 
 .button.secondary {
 
-
     background:#202030;
 
     border:1px solid #444;
 
+}
+
+
+
+
+
+.finder-buttons {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:40px;
 
 }
 
+/* =========================
+   Sections
+========================= */
+
+
+main section {
+
+    padding:60px 5%;
+
+}
+
+
+
+h2 {
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+/* =========================
+   Ghost Finder Evidence
+========================= */
+
+
+.evidence-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+.evidence-card {
+
+    background:#151522;
+
+    border:1px solid #333;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    transition:.3s;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.evidence-card:hover {
+
+    border-color:#3aa7ff;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+.evidence-card input {
+
+    margin-right:10px;
+
+    width:18px;
+
+    height:18px;
+
+}
+
+
+
+
+
+.evidence-card:has(input:checked) {
+
+    border-color:#8de8ff;
+
+    box-shadow:0 0 15px rgba(58,167,255,.5);
+
+}
+
+
+
+
+
+/* =========================
+   Ghost Finder Results
+========================= */
+
+
+#ghost-results {
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+.ghost-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+
+.ghost-card {
+
+    background:#11111d;
+
+    border:1px solid #252535;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.ghost-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:#3aa7ff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+
+
+
+
+.ghost-card h3 {
+
+    color:#8de8ff;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.ghost-card p {
+
+    color:#cccccc;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.ghost-card strong {
+
+    color:#ffffff;
+
+}
 
 
 
@@ -343,16 +522,12 @@ h2 {
 
 .features {
 
-
     display:grid;
 
     grid-template-columns:
-
     repeat(auto-fit,minmax(250px,1fr));
 
-
     gap:25px;
-
 
 }
 
@@ -360,9 +535,7 @@ h2 {
 
 
 
-
 .card {
-
 
     background:#11111d;
 
@@ -376,7 +549,6 @@ h2 {
 
     text-align:center;
 
-
 }
 
 
@@ -385,23 +557,9 @@ h2 {
 
 .card:hover {
 
-
     transform:translateY(-8px);
 
     border-color:#3aa7ff;
-
-
-}
-
-
-
-
-
-.card h3 {
-
-
-    color:#8de8ff;
-
 
 }
 
@@ -411,441 +569,34 @@ h2 {
 
 .card-icon {
 
-
     font-size:45px;
 
     margin-bottom:15px;
 
-
 }
 
 
 
 
 
-
-
-/* =========================
-   Ghost Finder Evidence
-========================= */
-
-
-.evidence-grid {
-
-
-    display:grid;
-
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(220px,1fr));
-
-
-    gap:20px;
-
-
-    max-width:1000px;
-
-
-    margin:auto;
-
-
-}
-
-
-
-
-
-
-.evidence-card {
-
-
-    background:#151522;
-
-
-    border:1px solid #333;
-
-
-    padding:25px;
-
-
-    border-radius:15px;
-
-
-    cursor:pointer;
-
-
-    text-align:center;
-
-
-    transition:.3s;
-
-
-    font-size:18px;
-
-
-}
-
-
-
-
-
-.evidence-card:hover {
-
-
-    border-color:#3aa7ff;
-
-
-    transform:translateY(-5px);
-
-
-}
-
-
-
-
-.evidence-card input {
-
-
-    margin-right:10px;
-
-
-    width:18px;
-
-
-    height:18px;
-
-
-}
-
-
-
-
-.evidence-card:has(input:checked) {
-
-
-    border-color:#8de8ff;
-
-
-    box-shadow:
-
-    0 0 15px rgba(58,167,255,.5);
-
-
-}
-
-/* =========================
-   Ghost Database Cards
-========================= */
-
-
-#ghost-results {
-
-
-    margin-top:30px;
-
-
-}
-
-
-
-
-.ghost-grid,
-#ghost-container {
-
-
-    display:grid;
-
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(280px,1fr));
-
-
-    gap:25px;
-
-
-}
-
-
-
-
-
-.ghost-card {
-
-
-    background:
-
-
-    linear-gradient(
-
-    145deg,
-
-    #11111d,
-
-    #1b1b2b
-
-    );
-
-
-    border:1px solid #252535;
-
-
-    padding:25px;
-
-
-    border-radius:18px;
-
-
-    text-align:left;
-
-
-    transition:.3s;
-
-
-    position:relative;
-
-
-    overflow:hidden;
-
-
-}
-
-
-
-
-
-.ghost-card::before {
-
-
-    content:"👻";
-
-
-    position:absolute;
-
-
-    right:15px;
-
-
-    top:5px;
-
-
-    font-size:45px;
-
-
-    opacity:.08;
-
-
-}
-
-
-
-
-
-.ghost-card:hover {
-
-
-    transform:translateY(-8px);
-
-
-    border-color:#8de8ff;
-
-
-    box-shadow:
-
-
-    0 10px 30px rgba(0,0,0,.6);
-
-
-}
-
-
-
-
-
-.ghost-card h3 {
-
+.card h3 {
 
     color:#8de8ff;
 
-
-    font-size:24px;
-
-
-    text-align:center;
-
-
-    margin-bottom:20px;
-
-
 }
 
 
 
 
 
-.ghost-card p {
+.card a {
 
+    color:#3aa7ff;
 
-    color:#cccccc;
-
-
-    margin-bottom:18px;
-
-
-    line-height:1.7;
-
+    text-decoration:none;
 
 }
 
-
-
-
-
-.ghost-card strong {
-
-
-    color:#ffffff;
-
-
-}
-
-
-
-
-
-
-/* Evidence gedeelte */
-
-
-.ghost-card p:first-of-type {
-
-
-    background:#090912;
-
-
-    padding:15px;
-
-
-    border-radius:12px;
-
-
-    border-left:4px solid #3aa7ff;
-
-
-}
-
-
-
-
-
-
-/* Sterren moeilijkheid */
-
-
-.ghost-card p:last-child {
-
-
-    background:#090912;
-
-
-    padding:12px;
-
-
-    border-radius:12px;
-
-
-    color:#ffd700;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   Search + Filter
-========================= */
-
-
-.search-area {
-
-
-    max-width:900px;
-
-
-    margin:auto;
-
-
-    background:#11111d;
-
-
-    padding:25px;
-
-
-    border-radius:18px;
-
-
-    border:1px solid #252535;
-
-
-}
-
-
-
-
-
-.search-area input,
-.search-area select {
-
-
-    width:100%;
-
-
-    padding:14px;
-
-
-    margin-top:12px;
-
-
-    margin-bottom:15px;
-
-
-    border-radius:10px;
-
-
-    border:1px solid #333;
-
-
-    background:#090912;
-
-
-    color:white;
-
-
-    font-size:16px;
-
-
-}
-
-
-
-
-
-.search-area input:focus,
-.search-area select:focus {
-
-
-    outline:none;
-
-
-    border-color:#3aa7ff;
-
-
-}
 
 
 
@@ -858,69 +609,23 @@ h2 {
 ========================= */
 
 
-.advertisement {
-
-
-    min-height:120px;
-
-
-    background:#101018;
-
-
-    border:1px dashed #555;
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    align-items:center;
-
-
-    color:#777;
-
-
-    border-radius:12px;
-
-
-    margin:40px 0;
-
-
-}
-
-
-
-
-
-
 .ad-placeholder {
-
 
     height:120px;
 
-
     background:#101018;
-
 
     border:1px dashed #555;
 
-
     display:flex;
-
 
     justify-content:center;
 
-
     align-items:center;
-
 
     color:#777;
 
-
     border-radius:12px;
-
 
 }
 
@@ -937,18 +642,13 @@ h2 {
 
 footer {
 
-
     background:#07070c;
-
 
     text-align:center;
 
-
     padding:40px 20px;
 
-
     border-top:1px solid #222;
-
 
 }
 
@@ -958,18 +658,13 @@ footer {
 
 .footer-links {
 
-
     display:flex;
-
 
     justify-content:center;
 
-
     gap:20px;
 
-
     flex-wrap:wrap;
-
 
 }
 
@@ -979,52 +674,9 @@ footer {
 
 .footer-links a {
 
-
     color:#aaa;
 
-
     text-decoration:none;
-
-
-}
-
-
-
-
-
-.footer-links a:hover {
-
-
-    color:#8de8ff;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   Finder Buttons
-========================= */
-
-
-.finder-buttons {
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    gap:20px;
-
-
-    margin-top:40px;
-
 
 }
 
@@ -1045,12 +697,9 @@ footer {
 
 .header {
 
-
     flex-direction:column;
 
-
     gap:20px;
-
 
 }
 
@@ -1058,12 +707,9 @@ footer {
 
 .navigation {
 
-
     flex-wrap:wrap;
 
-
     justify-content:center;
-
 
 }
 
@@ -1071,19 +717,17 @@ footer {
 
 .hero h1 {
 
-
     font-size:38px;
-
 
 }
 
 
 
+
+
 .finder-buttons {
 
-
     flex-direction:column;
-
 
 }
 
@@ -1091,28 +735,23 @@ footer {
 
 .button {
 
-
     width:100%;
 
-
 }
+
+
 
 
 
 .evidence-grid {
 
-
     grid-template-columns:1fr;
 
-
 }
 
 
 
 }
-
-
-
 
 
 
@@ -1123,9 +762,7 @@ footer {
 
 .logo {
 
-
     font-size:22px;
-
 
 }
 
@@ -1133,9 +770,7 @@ footer {
 
 h2 {
 
-
     font-size:28px;
-
 
 }
 
@@ -1143,19 +778,7 @@ h2 {
 
 .ghost-card {
 
-
     padding:20px;
-
-
-}
-
-
-
-.ghost-card h3 {
-
-
-    font-size:21px;
-
 
 }
 
