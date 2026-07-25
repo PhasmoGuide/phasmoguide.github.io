@@ -295,26 +295,20 @@ fetch("js/ghosts.json")
 
 .then(data => {
 
+console.log(data);
 
 ghosts = data;
 
-
 showGhosts(ghosts);
-
-
 
 })
 
 .catch(error => {
 
+console.error("JSON fout:", error);
 
 document.getElementById("ghost-container").innerHTML =
-
-"<p>De geesten database kon niet worden geladen.</p>";
-
-
-console.error(error);
-
+"JSON fout: " + error;
 
 });
 
