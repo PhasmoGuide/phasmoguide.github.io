@@ -307,10 +307,10 @@ showGhosts(ghosts);
 
 .catch(error => {
 
-console.error("JSON fout:", error);
+console.error("Fout bij laden ghosts.json:", error);
 
 document.getElementById("ghost-container").innerHTML =
-"JSON fout: " + error;
+"<p>Fout: " + error + "</p>";
 
 });
 
