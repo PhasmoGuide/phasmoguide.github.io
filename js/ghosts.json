@@ -45,7 +45,7 @@
     ],
     "hunt_sanity": "50%",
     "speed": "Normal",
-    "strength": "Zichtbaar zijn bij een Phantom verlaagt sanity sneller.",
+    "strength": "Verlaagt sanity sneller wanneer hij zichtbaar is.",
     "weakness": "Een foto maken laat hem tijdelijk verdwijnen.",
     "ability": "Verschijnt minder vaak tijdens ghost events."
   },
@@ -63,7 +63,7 @@
     "hunt_sanity": "50%",
     "speed": "Normal",
     "strength": "Kan meerdere objecten tegelijk gooien.",
-    "weakness": "Is minder sterk in lege kamers.",
+    "weakness": "Minder sterk in lege kamers.",
     "ability": "Sterke objectinteracties."
   },
 
@@ -79,15 +79,15 @@
     ],
     "hunt_sanity": "50%",
     "speed": "Normal",
-    "strength": "Richt zich op één specifieke speler.",
-    "weakness": "Kan gevonden worden met de Parabolic Microphone.",
-    "ability": "Heeft een doelwit tijdens onderzoeken."
+    "strength": "Richt zich op één speler.",
+    "weakness": "Vindbaar met Parabolic Microphone.",
+    "ability": "Heeft een persoonlijk doelwit."
   },
 
   {
     "id": "jinn",
     "name": "Jinn",
-    "icon": "👻",
+    "icon": "⚡",
     "difficulty": 3,
     "evidence": [
       "EMF Level 5",
@@ -96,7 +96,7 @@
     ],
     "hunt_sanity": "50%",
     "speed": "Fast near electronics",
-    "strength": "Kan sneller bewegen als de zekeringkast aan staat.",
+    "strength": "Kan extreem snel worden bij actieve elektronica.",
     "weakness": "Kan de zekeringkast niet uitschakelen.",
     "ability": "Kan sanity verminderen van spelers dichtbij."
   },
@@ -104,24 +104,24 @@
   {
     "id": "mare",
     "name": "Mare",
-    "icon": "👻",
+    "icon": "🌙",
     "difficulty": 3,
     "evidence": [
       "Spirit Box",
       "Ghost Orbs",
       "Ghost Writing"
     ],
-    "hunt_sanity": "40% - 60%",
+    "hunt_sanity": "40-60%",
     "speed": "Normal",
     "strength": "Sterker in donkere ruimtes.",
     "weakness": "Heeft moeite met jagen in licht.",
-    "ability": "Kan vaak lampen uitschakelen."
+    "ability": "Schakelt vaak verlichting uit."
   },
 
   {
     "id": "revenant",
     "name": "Revenant",
-    "icon": "👻",
+    "icon": "💀",
     "difficulty": 5,
     "evidence": [
       "Ghost Orbs",
@@ -130,279 +130,314 @@
     ],
     "hunt_sanity": "50%",
     "speed": "Very Fast when chasing",
-    "strength": "Wordt extreem snel wanneer hij een speler detecteert.",
-    "weakness": "Is extreem langzaam zonder doelwit.",
-    "ability": "Snelheid verandert tijdens een hunt."
-  },
-    {
-    "id": "shade",
-    "name": "Shade",
-    "icon": "👻",
-    "difficulty": 3,
-    "evidence": [
-      "EMF Level 5",
-      "Ghost Writing",
-      "Freezing Temperatures"
-    ],
-    "hunt_sanity": "35%",
-    "speed": "Normal",
-    "strength": "Een van de minst actieve geesten.",
-    "weakness": "Kan niet jagen wanneer spelers dichtbij zijn.",
-    "ability": "Vermijdt interacties wanneer meerdere spelers aanwezig zijn."
-  },
-
-  {
-    "id": "demon",
-    "name": "Demon",
-    "icon": "👿",
-    "difficulty": 5,
-    "evidence": [
-      "Ultraviolet",
-      "Ghost Writing",
-      "Freezing Temperatures"
-    ],
-    "hunt_sanity": "70%",
-    "speed": "Normal",
-    "strength": "Kan veel eerder beginnen met jagen dan andere geesten.",
-    "weakness": "Crucifix werkt op grotere afstand.",
-    "ability": "Heeft de hoogste standaard hunt-kans."
-  },
-
-  {
-    "id": "yurei",
-    "name": "Yurei",
-    "icon": "👻",
-    "difficulty": 3,
-    "evidence": [
-      "Ghost Orbs",
-      "Freezing Temperatures",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Normal",
-    "strength": "Heeft een sterke invloed op sanity.",
-    "weakness": "Smudge Sticks beperken zijn activiteit tijdelijk.",
-    "ability": "Kan deuren sterker beïnvloeden."
-  },
-
-  {
-    "id": "oni",
-    "name": "Oni",
-    "icon": "👹",
-    "difficulty": 4,
-    "evidence": [
-      "EMF Level 5",
-      "Freezing Temperatures",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Normal",
-    "strength": "Zeer actief en vaak zichtbaar.",
-    "weakness": "Verdwijnt niet snel tijdens manifestaties.",
-    "ability": "Kan vaker verschijnen tijdens ghost events."
-  },
-
-  {
-    "id": "yokai",
-    "name": "Yokai",
-    "icon": "👻",
-    "difficulty": 3,
-    "evidence": [
-      "Spirit Box",
-      "Ghost Orbs",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "80% wanneer spelers praten",
-    "speed": "Normal",
-    "strength": "Wordt agressief door stemmen van spelers.",
-    "weakness": "Kan spelers minder goed horen tijdens hunts.",
-    "ability": "Reageert sterk op geluid."
-  },
-
-  {
-    "id": "hantu",
-    "name": "Hantu",
-    "icon": "👻",
-    "difficulty": 4,
-    "evidence": [
-      "Ultraviolet",
-      "Ghost Orbs",
-      "Freezing Temperatures"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Fast in cold areas",
-    "strength": "Wordt sneller in koude ruimtes.",
-    "weakness": "Wordt langzamer in warme gebieden.",
-    "ability": "Snelheid hangt af van temperatuur."
-  },
-
-  {
-    "id": "goryo",
-    "name": "Goryo",
-    "icon": "👻",
-    "difficulty": 4,
-    "evidence": [
-      "EMF Level 5",
-      "Ultraviolet",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Normal",
-    "strength": "DOTS is alleen zichtbaar via een videocamera.",
-    "weakness": "Verlaat zijn favoriete kamer minder vaak.",
-    "ability": "Blijft meestal dicht bij de ghost room."
-  },
-
-  {
-    "id": "myling",
-    "name": "Myling",
-    "icon": "👻",
-    "difficulty": 4,
-    "evidence": [
-      "EMF Level 5",
-      "Ultraviolet",
-      "Ghost Writing"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Normal",
-    "strength": "Maakt minder geluid tijdens hunts.",
-    "weakness": "Is beter te herkennen met een Parabolic Microphone.",
-    "ability": "Veroorzaakt vaker paranormale geluiden."
-  },
-
-  {
-    "id": "onryo",
-    "name": "Onryo",
-    "icon": "👻",
-    "difficulty": 4,
-    "evidence": [
-      "Spirit Box",
-      "Ghost Orbs",
-      "Freezing Temperatures"
-    ],
-    "hunt_sanity": "60%",
-    "speed": "Normal",
-    "strength": "Kan sneller jagen wanneer vuur uitgaat.",
-    "weakness": "Vuur kan hunts tijdelijk voorkomen.",
-    "ability": "Reageert sterk op kaarsen."
-  },
-  {
-    "id": "the_twins",
-    "name": "The Twins",
-    "icon": "👥",
-    "difficulty": 4,
-    "evidence": [
-      "EMF Level 5",
-      "Spirit Box",
-      "Freezing Temperatures"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Normal",
-    "strength": "Kan op twee verschillende plekken interacties veroorzaken.",
-    "weakness": "De twee interactiegebieden maken hem herkenbaar.",
-    "ability": "Kan twee verschillende interactiepunten gebruiken."
-  },
-
-  {
-    "id": "raiju",
-    "name": "Raiju",
-    "icon": "⚡",
-    "difficulty": 4,
-    "evidence": [
-      "EMF Level 5",
-      "Ghost Orbs",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Fast near electronics",
-    "strength": "Wordt sneller bij actieve elektronische apparatuur.",
-    "weakness": "Is minder gevaarlijk zonder elektronica.",
-    "ability": "Kan elektronische apparaten beïnvloeden."
-  },
-
-  {
-    "id": "obake",
-    "name": "Obake",
-    "icon": "👻",
-    "difficulty": 4,
-    "evidence": [
-      "EMF Level 5",
-      "Ultraviolet",
-      "Ghost Orbs"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Normal",
-    "strength": "Kan speciale vingerafdrukken achterlaten.",
-    "weakness": "Laat soms afwijkende handafdrukken zien.",
-    "ability": "Kan tijdens hunts van vorm veranderen."
-  },
-
-  {
-    "id": "the_mimic",
-    "name": "The Mimic",
-    "icon": "🪞",
-    "difficulty": 5,
-    "evidence": [
-      "Spirit Box",
-      "Ultraviolet",
-      "Freezing Temperatures",
-      "Ghost Orbs (extra)"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Varies",
-    "strength": "Kan eigenschappen van andere geesten kopiëren.",
-    "weakness": "Heeft altijd nep Ghost Orbs als extra bewijs.",
-    "ability": "Kan verschillende ghost-types nabootsen."
-  },
-
-  {
-    "id": "moroi",
-    "name": "Moroi",
-    "icon": "👻",
-    "difficulty": 5,
-    "evidence": [
-      "Spirit Box",
-      "Ghost Writing",
-      "Freezing Temperatures"
-    ],
-    "hunt_sanity": "50%",
-    "speed": "Fast at low sanity",
-    "strength": "Wordt sneller wanneer sanity lager wordt.",
-    "weakness": "Smudge Sticks houden hem langer tegen.",
-    "ability": "Kan spelers vervloeken via Spirit Box."
-  },
-
-  {
-    "id": "deogen",
-    "name": "Deogen",
-    "icon": "👁️",
-    "difficulty": 5,
-    "evidence": [
-      "Spirit Box",
-      "Ghost Writing",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "40%",
-    "speed": "Slow near players",
-    "strength": "Kan altijd de locatie van spelers vinden.",
-    "weakness": "Wordt extreem langzaam dichtbij spelers.",
-    "ability": "Heeft een unieke Spirit Box reactie."
-  },
-
-  {
-    "id": "thaye",
-    "name": "Thaye",
-    "icon": "👻",
-    "difficulty": 4,
-    "evidence": [
-      "Ghost Orbs",
-      "Ghost Writing",
-      "DOTS Projector"
-    ],
-    "hunt_sanity": "75% wanneer jong",
-    "speed": "Fast when young",
-    "strength": "Begint zeer sterk en agressief.",
-    "weakness": "Wordt zwakker naarmate de tijd verstrijkt.",
-    "ability": "Leeftijd verandert tijdens het onderzoek."
+    "strength": "Wordt extreem snel wanneer hij een speler ziet.",
+    "weakness": "Is zeer langzaam zonder doelwit.",
+    "ability": "Snelheid verandert tijdens hunts."
   }
+,
+{
+  "id": "shade",
+  "name": "Shade",
+  "icon": "👻",
+  "difficulty": 3,
+  "evidence": [
+    "EMF Level 5",
+    "Ghost Writing",
+    "Freezing Temperatures"
+  ],
+  "hunt_sanity": "35%",
+  "speed": "Normal",
+  "strength": "Een van de minst actieve geesten.",
+  "weakness": "Kan niet jagen wanneer spelers dichtbij zijn.",
+  "ability": "Vermijdt interacties met meerdere spelers."
+},
+
+{
+  "id": "demon",
+  "name": "Demon",
+  "icon": "👿",
+  "difficulty": 5,
+  "evidence": [
+    "Ultraviolet",
+    "Ghost Writing",
+    "Freezing Temperatures"
+  ],
+  "hunt_sanity": "70%",
+  "speed": "Normal",
+  "strength": "Kan veel eerder beginnen met jagen.",
+  "weakness": "Crucifix werkt op grotere afstand.",
+  "ability": "Heeft de hoogste jachtkans."
+},
+
+{
+  "id": "yurei",
+  "name": "Yurei",
+  "icon": "👻",
+  "difficulty": 3,
+  "evidence": [
+    "Ghost Orbs",
+    "Freezing Temperatures",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "Heeft grote invloed op sanity.",
+  "weakness": "Smudge Sticks beperken activiteit.",
+  "ability": "Kan deuren sterk beïnvloeden."
+},
+
+{
+  "id": "oni",
+  "name": "Oni",
+  "icon": "👹",
+  "difficulty": 4,
+  "evidence": [
+    "EMF Level 5",
+    "Freezing Temperatures",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "Zeer actief en vaak zichtbaar.",
+  "weakness": "Verdwijnt niet snel tijdens manifestaties.",
+  "ability": "Heeft meer zichtbare interacties."
+},
+
+{
+  "id": "yokai",
+  "name": "Yokai",
+  "icon": "👻",
+  "difficulty": 3,
+  "evidence": [
+    "Spirit Box",
+    "Ghost Orbs",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "80% bij veel praten",
+  "speed": "Normal",
+  "strength": "Wordt agressief door stemmen.",
+  "weakness": "Kan spelers minder goed horen tijdens hunts.",
+  "ability": "Reageert sterk op geluid."
+},
+
+{
+  "id": "hantu",
+  "name": "Hantu",
+  "icon": "❄️",
+  "difficulty": 4,
+  "evidence": [
+    "Ultraviolet",
+    "Ghost Orbs",
+    "Freezing Temperatures"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Fast in cold areas",
+  "strength": "Wordt sneller in koude gebieden.",
+  "weakness": "Wordt langzamer in warme gebieden.",
+  "ability": "Snelheid hangt af van temperatuur."
+},
+
+{
+  "id": "goryo",
+  "name": "Goryo",
+  "icon": "👻",
+  "difficulty": 4,
+  "evidence": [
+    "EMF Level 5",
+    "Ultraviolet",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "DOTS is alleen zichtbaar via camera.",
+  "weakness": "Verlaat de ghost room weinig.",
+  "ability": "Blijft meestal in zijn kamer."
+},
+
+{
+  "id": "myling",
+  "name": "Myling",
+  "icon": "👂",
+  "difficulty": 4,
+  "evidence": [
+    "EMF Level 5",
+    "Ultraviolet",
+    "Ghost Writing"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "Maakt weinig geluid tijdens hunts.",
+  "weakness": "Kan gevonden worden met geluiden.",
+  "ability": "Produceert vaker paranormale geluiden."
+},
+
+{
+  "id": "onryo",
+  "name": "Onryo",
+  "icon": "🕯️",
+  "difficulty": 4,
+  "evidence": [
+    "Spirit Box",
+    "Ghost Orbs",
+    "Freezing Temperatures"
+  ],
+  "hunt_sanity": "60%",
+  "speed": "Normal",
+  "strength": "Kan snel jagen wanneer vuur uitgaat.",
+  "weakness": "Kaarsen kunnen hunts voorkomen.",
+  "ability": "Reageert sterk op vuur."
+},
+
+{
+  "id": "the_twins",
+  "name": "The Twins",
+  "icon": "👥",
+  "difficulty": 4,
+  "evidence": [
+    "EMF Level 5",
+    "Spirit Box",
+    "Freezing Temperatures"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "Kan op twee plekken tegelijk interacties veroorzaken.",
+  "weakness": "Interacties zijn verspreid.",
+  "ability": "Heeft twee mogelijke locaties."
+},
+
+{
+  "id": "raiju",
+  "name": "Raiju",
+  "icon": "⚡",
+  "difficulty": 4,
+  "evidence": [
+    "EMF Level 5",
+    "Ghost Orbs",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Fast near electronics",
+  "strength": "Wordt sneller bij elektronica.",
+  "weakness": "Minder gevaarlijk zonder apparatuur.",
+  "ability": "Beïnvloedt elektronische apparaten."
+},
+
+{
+  "id": "obake",
+  "name": "Obake",
+  "icon": "🖐️",
+  "difficulty": 4,
+  "evidence": [
+    "EMF Level 5",
+    "Ultraviolet",
+    "Ghost Orbs"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "Kan unieke vingerafdrukken achterlaten.",
+  "weakness": "Soms afwijkende handafdrukken.",
+  "ability": "Kan van vorm veranderen."
+}
+,
+{
+  "id": "the_mimic",
+  "name": "The Mimic",
+  "icon": "🪞",
+  "difficulty": 5,
+  "evidence": [
+    "Spirit Box",
+    "Ultraviolet",
+    "Freezing Temperatures",
+    "Ghost Orbs"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Verandert",
+  "strength": "Kan andere geesten nabootsen.",
+  "weakness": "Heeft altijd nep Ghost Orbs als extra bewijs.",
+  "ability": "Neemt eigenschappen over van andere geesten."
+},
+
+{
+  "id": "moroi",
+  "name": "Moroi",
+  "icon": "🩸",
+  "difficulty": 5,
+  "evidence": [
+    "Spirit Box",
+    "Ghost Writing",
+    "Freezing Temperatures"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Wordt sneller naarmate sanity daalt",
+  "strength": "Kan spelers vervloeken via Spirit Box.",
+  "weakness": "Smudge Sticks werken langer.",
+  "ability": "Snelheid hangt af van gemiddelde sanity."
+},
+
+{
+  "id": "deogen",
+  "name": "Deogen",
+  "icon": "👁️",
+  "difficulty": 5,
+  "evidence": [
+    "Spirit Box",
+    "Ghost Writing",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "40%",
+  "speed": "Zeer snel ver weg, langzaam dichtbij",
+  "strength": "Kan spelers altijd vinden.",
+  "weakness": "Wordt extreem langzaam dichtbij.",
+  "ability": "Kan niet verborgen worden tijdens hunts."
+},
+
+{
+  "id": "thaye",
+  "name": "Thaye",
+  "icon": "⏳",
+  "difficulty": 5,
+  "evidence": [
+    "Ghost Orbs",
+    "Ghost Writing",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "75% wanneer jong",
+  "speed": "Begint snel en wordt langzamer",
+  "strength": "Begint zeer agressief.",
+  "weakness": "Veroudert tijdens het onderzoek.",
+  "ability": "Wordt zwakker na tijd."
+},
+
+{
+  "id": "phantom_special",
+  "name": "Phantom (Guide Info)",
+  "icon": "📖",
+  "difficulty": 3,
+  "evidence": [
+    "Spirit Box",
+    "Ultraviolet",
+    "DOTS Projector"
+  ],
+  "hunt_sanity": "50%",
+  "speed": "Normal",
+  "strength": "Verdwijnt sneller tijdens foto's.",
+  "weakness": "Kan herkend worden via camera.",
+  "ability": "Extra herkenningsinformatie."
+},
+
+{
+  "id": "unknown",
+  "name": "Ghost Guide Entry",
+  "icon": "👻",
+  "difficulty": 1,
+  "evidence": [
+    "Geen"
+  ],
+  "hunt_sanity": "N.v.t.",
+  "speed": "N.v.t.",
+  "strength": "Placeholder voor toekomstige updates.",
+  "weakness": "Geen informatie.",
+  "ability": "Wordt later aangepast."
+}
+
 ]
